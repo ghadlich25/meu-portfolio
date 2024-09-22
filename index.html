@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra Blumenau</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Para estilos personalizados -->
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-info text-white text-center py-4">
+        <h1>Descubra Blumenau</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao1">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao2">Cultura</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#secao3">Atrações</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo -->
+    <div class="container my-5">
+
+        <!-- Seção 1: História -->
+        <div class="row" id="secao1">
+            <div class="col text-center">
+                <h2>História de Blumenau</h2>
+                <p>Blumenau foi fundada em 1850 por imigrantes alemães e é conhecida por sua arquitetura em estilo enxaimel, que remete à cultura germânica.</p>
+            </div>
+        </div>
+
+        <!-- Seção 2: Cultura -->
+        <div class="row my-4" id="secao2">
+            <div class="col text-center">
+                <h2>Cultura e Festivais</h2>
+                <p>A Oktoberfest é o evento mais famoso de Blumenau, atraindo milhares de visitantes que celebram a cultura alemã com comida, música e dança. O evento ocorre todo ano no mês de Outubro e gera milhares de empregos durante todos os dias de festa.</p>
+            </div>
+        </div>
+
+        <!-- Seção 3: Atrações -->
+        <div class="row" id="secao3">
+            <div class="col text-center">
+                <h2>Atrações Turísticas</h2>
+                <p>Entre as principais atrações estão o Parque Vila Germânica, o Museu da Família Colonial e o Jardins de Primavera, que encantam turistas e moradores.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="ano"></span> Descubra Blumenau. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Atualiza o ano no rodapé
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
